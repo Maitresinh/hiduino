@@ -1,0 +1,17 @@
+Bloc,Composant,Quantité,Spécification minimale,Recherche AliExpress / achat,Obligatoire,Remarque
+Contrôle,Teensy 4.0 officiel,1,"PJRC i.MXRT1062, USB natif",Teensy 4.0 PJRC development board,oui,La 4.1 n'apporte rien au MVP
+DAC,Module MCP4822 SPI,1,"double DAC 12 bits, référence interne",MCP4822 DAC module SPI breakout,oui,LDAC relié à GND
+Galvo,Kit XY 20 kpps fermé,1,"moteurs + drivers + alimentation + entrée simple -5/+5 V documentée",20Kpps galvo scanner set driver power supply analog input,oui,Un seul axe utilisé
+Interface galvo,Convertisseur analogique,1,"0-2,048 V vers -5/+5 V, offset et gain, >20 kHz",0-5V to -5V +5V analog signal converter module,oui,Évite une sortie différentielle maison
+Laser,Module 650 nm TTL,1,"puissance mesurée <=1 mW, TTL 3,3 V compatible",650nm 1mW TTL laser module 5V,oui,Éviter 5 mW ou plus
+Détection,Module OPT101,1,"sortie analogique, alimentation 3,3 V",OPT101 photodiode amplifier sensor module,oui,Évite un ampli analogique maison
+Hauteur,Breakout VL53L4CD,1,"compatible 3,3 V, I2C",VL53L4CD time of flight sensor module,non,Octaves par hauteur
+Alimentation,Buck 5 V faible bruit,1,5 V 1 A minimum,MP1584 5V buck module,oui,Pour laser et auxiliaires
+Sécurité,Arrêt urgence NF,1,verrouillage mécanique,22mm emergency stop NC contact,oui,Dans le 5 V laser
+Sécurité,Microcontact capot NF,1,contact normalement fermé,microswitch normally closed roller,oui,Dans le 5 V laser
+Commande,Bouton ARM,1,momentané NO,momentary push button panel,oui,Réarmement manuel
+Commande,Interrupteur 8/12,1,SPST,toggle switch SPST,oui,Fermé = 12 chromatique
+Câblage,Résistances,1,"1 k, 10 k, 12 k, 22 k, 100 k, 1 %",metal film resistor kit 1 percent,oui,TTL et surveillance interlock
+Câblage,Borniers / WAGO / JST,1,détrompés,JST XH terminal block WAGO kit,oui,Pas de breadboard pour jouer
+Mécanique,Filament PETG noir,1,mat,PETG black matte filament,non,Capots et adaptateurs
+Optique,Filtre rouge 650 nm,1,petit filtre,650nm red optical filter,non,Utile en lumière ambiante
